@@ -34,9 +34,7 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-plugins:
-  - search:
-      separator: '[\s\-\.]+'
+# La section 'plugins' est supprimée pour laisser le thème material gérer la recherche par défaut.
 
 # Extensions Markdown pour des fonctionnalités avancées
 markdown_extensions:
