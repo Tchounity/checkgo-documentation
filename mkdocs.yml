@@ -35,7 +35,8 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-\.]+'
 
 # Extensions Markdown pour des fonctionnalités avancées
 markdown_extensions:
