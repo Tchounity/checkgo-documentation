@@ -1,0 +1,21 @@
+@keyframes highlight-and-fade {
+  from {
+    background-color: rgba(255, 229, 100, 0.5);
+    box-shadow: 0 0 10px rgba(255, 229, 100, 0.5);
+    border-radius: 4px;
+  }
+  to {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.lexicon-entry:target {
+  animation: highlight-and-fade 5s ease-in-out;
+  scroll-margin-top: 120px;
+}
+
+/* Cache l'onglet "Accueil" de la navigation principale */
+.md-tabs__item:first-child {
+  display: none;
+}

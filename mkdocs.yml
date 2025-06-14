@@ -1,0 +1,75 @@
+site_name: Check&Go - Portail de Gestion
+site_url: "" # À remplir avec l'URL de votre site GitHub Pages
+site_description: Documentation utilisateur pour le portail de gestion Check&Go v1.10.
+site_author: L'équipe Check&Go
+copyright: 'Copyright &copy; Neo Mobility'
+
+theme:
+  name: material
+  language: fr
+  palette:
+    # Palette pour le mode clair et sombre
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Passer au mode sombre
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Passer au mode clair
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.annotate
+    - content.tooltips
+
+# La clé extra_css doit être au niveau racine (pas d'indentation).
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+# Extensions Markdown pour des fonctionnalités avancées
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+# Structure de la navigation
+nav:
+  - "Accueil": index.md
+  - "I. Configuration initiale":
+    - "Connexion et vue d'ensemble": 'configuration/connexion-vue-ensemble.md'
+    - "Gestion des utilisateurs": 'configuration/utilisateurs.md'
+    - "Groupes de véhicules": 'configuration/groupes-vehicules.md'
+    - "Modèles de contrôles": 'configuration/modeles-controles.md'
+    - "Ajout de véhicules": 'configuration/ajout-vehicules.md'
+    - "Paramètres techniques": 'configuration/parametres-techniques.md'
+  - "II. Flux d'utilisation":
+    - "Création d'un contrat": 'flux-utilisation/creation-contrat.md'
+    - "État des lieux de départ": 'flux-utilisation/etat-lieux-depart.md'
+    - "État des lieux de retour": 'flux-utilisation/etat-lieux-retour.md'
+    - "Suivi et rapports": 'flux-utilisation/suivi-rapports.md'
+    - "Cas d'usage fréquents": 'flux-utilisation/cas-frequents.md'
+  - 'III. Lexique': 'lexique.md'
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/votre-organisation # Lien vers votre organisation GitHub 
