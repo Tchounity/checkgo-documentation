@@ -1,5 +1,5 @@
 site_name: Check&Go - Portail de Gestion
-site_url: "" # À remplir avec l'URL de votre site GitHub Pages
+site_url: "https://Tchounity.github.io/checkgo-documentation/"
 site_description: Documentation utilisateur pour le portail de gestion Check&Go v1.10.
 site_author: L'équipe Check&Go
 copyright: 'Copyright &copy; Neo Mobility'
@@ -72,4 +72,4 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/votre-organisation # Lien vers votre organisation GitHub 
+      link: https://github.com/Tchounity/checkgo-documentation 
