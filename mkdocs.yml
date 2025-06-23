@@ -6,17 +6,11 @@ copyright: 'Copyright &copy; Neo Mobility'
 
 theme:
   name: material
+  custom_dir: overrides
   language: fr
   palette:
-    # Palette pour le mode clair et sombre
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Passer au mode sombre
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Passer au mode clair
+    primary: custom
+    accent: custom
   features:
     - navigation.instant
     - navigation.tracking
@@ -32,7 +26,7 @@ theme:
 
 # La clé extra_css doit être au niveau racine (pas d'indentation).
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 # La section 'plugins' est supprimée pour laisser le thème material gérer la recherche par défaut.
 
@@ -48,6 +42,8 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - toc:
+      toc_depth: 3
 
 # Structure de la navigation
 nav:
@@ -55,6 +51,7 @@ nav:
   - "I. Configuration initiale":
     - "Connexion et vue d'ensemble": 'configuration/connexion-vue-ensemble.md'
     - "Gestion des utilisateurs": 'configuration/utilisateurs.md'
+    - "Modèles de véhicules": 'configuration/modeles-vehicules.md'
     - "Groupes de véhicules": 'configuration/groupes-vehicules.md'
     - "Modèles de contrôles": 'configuration/modeles-controles.md'
     - "Ajout de véhicules": 'configuration/ajout-vehicules.md'
@@ -65,10 +62,8 @@ nav:
     - "État des lieux de retour": 'flux-utilisation/etat-lieux-retour.md'
     - "Suivi et rapports": 'flux-utilisation/suivi-rapports.md'
     - "Cas d'usage fréquents": 'flux-utilisation/cas-frequents.md'
-  - 'III. Lexique': 'lexique.md'
+  - 'III. Lexique': 
+    - lexique.md
 
 extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Tchounity/checkgo-documentation 
+  generator: false 

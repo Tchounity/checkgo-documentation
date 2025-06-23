@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <style>
+    .md-container {
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - var(--md-header-height));
+    }
+    .md-footer {
+      margin-top: auto;
+    }
+  </style>
+{% endblock %} 

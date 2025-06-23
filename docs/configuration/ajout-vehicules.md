@@ -4,21 +4,48 @@ Cette section décrit les différentes méthodes pour ajouter des véhicules à 
 
 ## Ajout manuel
 
-L'ajout manuel est idéal pour ajouter un seul véhicule à la fois.
+L'ajout manuel permet d'enregistrer un ou plusieurs véhicules depuis le portail :
 
-!!! info "Information"
-    *Contenu à compléter avec le formulaire d'ajout manuel et la description des champs.*
+1. Accédez au menu **Véhicules**.
+2. Cliquez sur **Ajouter**.
+3. Renseignez les champs requis :
+
+    - **Propriétaire de flotte**
+    - **Marque**
+    - **Modèle**
+    - **Catégorie**
+    - **Groupe de véhicules**
+    - **Immatriculation**
+    - **VIN** (numéro de châssis)
+    - **Couleur** (code hexadécimal + nom traduit pour chaque langue)
+
+!!! info "Couleur"
+    La couleur du véhicule est affichée sous forme de pastille dans l'application. Il faut donc saisir :
+
+    - un **code couleur hexadécimal** (ex : `#0033FF`)
+    - un **nom de couleur traduit** dans toutes les langues supportées (ex : `bleu` / `blue` / `azul`…).
 
 ## Import via fichier
 
-Pour ajouter plusieurs véhicules en une seule fois, vous pouvez utiliser la fonctionnalité d'import.
+Pour ajouter plusieurs véhicules en une seule fois, utilisez le fichier d'import :
 
-!!! warning "Contraintes"
-    *Contenu à compléter avec le format du fichier d'import (CSV, Excel), les colonnes obligatoires et les contraintes à respecter.*
+1. Téléchargez le [**modèle de fichier d'import**](https://docs.google.com/spreadsheets/d/1dkxw2w8ypmjnb3ScyEPrjVcnbVbXglF_08x92-3VIQM/edit?usp=sharing){:target="_blank"}.
+2. Remplissez les colonnes requises :
+
+    - **Propriétaire de flotte**
+    - **Immatriculation**
+    - **VIN**
+    - **Kilométrage**
+    - **Modèle du véhicule**
+    - **Groupe de véhicules**
+    - **Couleur hexadécimale**
+    - **Nom de la couleur** dans chaque langue
+
+!!! warning "Correspondance exacte requise"
+    Les noms du **modèle de véhicule** et du **groupe de véhicules** doivent déjà exister sur le portail et être strictement identiques (caractères, espaces, accents, etc.), sinon l'import échouera.
 
 ## Contrôle préparatoire
 
-Après l'ajout, un contrôle préparatoire peut être nécessaire pour établir l'état initial du véhicule dans le système. Ce contrôle est une forme d'[état des lieux](../lexique.md#etat-des-lieux).
+Tout véhicule nouvellement ajouté est marqué comme **non préparé**.
 
-!!! info "Information"
-    *Contenu à compléter avec la procédure du contrôle préparatoire.* 
+Il devra passer par un **contrôle préparatoire** (voir [Modèles de contrôles](./modeles-controles.md)) pour être marqué comme prêt à la location.

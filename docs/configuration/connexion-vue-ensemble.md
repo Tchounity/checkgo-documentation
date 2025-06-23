@@ -1,17 +1,16 @@
-# Connexion et vue d'ensemble
+# Première connexion
 
-Cette section décrit comment accéder au portail Check&Go et présente une vue d'ensemble de son interface.
+Pour accéder au portail :
 
-## Accès au portail
-
-Pour vous connecter au portail, suivez ces étapes :
-
-1.  Ouvrez votre navigateur web et rendez-vous à l'adresse qui vous a été communiquée.
-2.  Saisissez votre **adresse e-mail** et votre **mot de passe** dans les champs prévus à cet effet.
-3.  Cliquez sur le bouton de connexion.
+1. Rendez-vous sur l'URL fournie par votre responsable.
+2. Saisissez votre **adresse email** et votre **mot de passe**.
+3. Cliquez sur **Se connecter**.
 
 ![Liste des contrôles dans l'interface](../assets/images/email-password.png)
 
+---
+
 Une fois connecté, vous arriverez par défaut sur la page listant les [États des lieux](../lexique.md#etat-des-lieux).
+
 
 ![Liste des contrôles dans l'interface](../assets/images/control-list.png)

@@ -1,17 +1,52 @@
 # Modèles de contrôles
 
-Les [Modèles de contrôles](../lexique.md#modele-de-controle) sont des listes de points à vérifier lors d'un [état des lieux](../lexique.md#etat-des-lieux). Ils sont personnalisables et peuvent être assignés à des [groupes de véhicules](./groupes-vehicules.md).
+Un modèle de contrôle est une liste structurée d'étapes à suivre lors d'un [état des lieux](../lexique.md#etat-des-lieux). Chaque groupe de véhicules peut avoir un ou plusieurs modèles assignés selon le contexte (départ, retour, remplacement, préparation).
 
-## Qu'est-ce qu'un modèle de contrôle ?
+## Création d'un modèle
 
-Un [modèle de contrôle](../lexique.md#modele-de-controle) est un formulaire numérique qui guide le technicien ou le client lors de l'inspection du véhicule. Il garantit qu'aucun point n'est oublié.
+1. Accédez au menu **Contrôle** > **Modèles**.
+2. Cliquez sur **Ajouter**.
+3. Renseignez :
+    - Le **propriétaire de flotte**
+    - Le **nom du modèle**
+4. Définissez les étapes du modèle (voir ci-dessous).
 
-!!! info "Information"
-    *Contenu à compléter avec des exemples de points de contrôle.*
+## Étapes disponibles
 
-## Création et affectation
+1. **Photos de parties spécifiques** :
+    - demande de photos (ex : phare avant gauche, pare-choc…).
+2. **Vérification des dégâts** :
+    - Zones standards (avant, arrière, gauche, droite)
+    - Zones personnalisées configurées par l'administrateur
+    - Option "photo de la zone" pour forcer une photo en cas de dégât
+3. **Formulaire** :
+    - **Section générale** :
+        - carburant (en 1/8)
+        - kilométrage
+        - photo tableau de bord
+        - photo du VIN
+        - place de stationnement
+    - **Éléments présents dans le véhicule** :
+        - liste personnalisable
+4. **Contrôle propreté** :
+    - Intérieur / Extérieur (notation sur 5)
+    - Présence d'odeur de cigarette (oui/non)
+    !!! tip
+        Une photo est automatiquement demandée si la note est inférieure à 3/5.
+5. **Résumé et signature client** :
+    - résumé de l'état des lieux + signature
+6. **Actions à réaliser** :
+    - Type : tâche (obligatoire) ou question (oui/non)
+    - Description (traduite)
 
-Vous pouvez créer autant de modèles que nécessaire et les affecter à un ou plusieurs groupes de véhicules.
+## Affectation
 
-!!! info "Information"
-    *Contenu à compléter avec les étapes de création et d'affectation d'un modèle.* 
+Chaque modèle peut être assigné à un ou plusieurs cas d'usage :
+
+- **Départ de contrat**
+- **Retour de contrat**
+- **Remplacement de véhicule**
+- **Préparation complète / rapide**
+
+!!! info
+    Ces affectations se font au niveau du [groupe de véhicules](./groupes-vehicules.md).
