@@ -1,4 +1,3 @@
-# Fichier de configuration de test minimal
 backend:
   name: github
   repo: Tchounity/checkgo-documentation
@@ -16,16 +15,12 @@ collections:
         label: "Page d'accueil"
         file: "docs/index.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "lexique"
         label: "Lexique"
         file: "docs/lexique.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
 
   - name: "configuration"
     label: "I. Configuration initiale"
@@ -34,51 +29,37 @@ collections:
         label: "Connexion et vue d'ensemble"
         file: "docs/configuration/connexion-vue-ensemble.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "utilisateurs"
         label: "Gestion des utilisateurs"
         file: "docs/configuration/utilisateurs.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "modeles-vehicules"
         label: "Modeles de vehicules"
         file: "docs/configuration/modeles-vehicules.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "groupes-vehicules"
         label: "Groupes de vehicules"
         file: "docs/configuration/groupes-vehicules.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "modeles-controles"
         label: "Modeles de controles"
         file: "docs/configuration/modeles-controles.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "ajout-vehicules"
         label: "Ajout de vehicules"
         file: "docs/configuration/ajout-vehicules.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "parametres-techniques"
         label: "Parametres techniques"
         file: "docs/configuration/parametres-techniques.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
 
   - name: "flux"
     label: "II. Flux d'utilisation"
@@ -87,34 +68,24 @@ collections:
         label: "Creation d'un contrat"
         file: "docs/flux-utilisation/creation-contrat.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "etat-lieux-depart"
         label: "Etat des lieux de depart"
         file: "docs/flux-utilisation/etat-lieux-depart.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "etat-lieux-retour"
         label: "Etat des lieux de retour"
         file: "docs/flux-utilisation/etat-lieux-retour.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "suivi-rapports"
         label: "Suivi et rapports"
         file: "docs/flux-utilisation/suivi-rapports.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown
+          - {label: Contenu, name: body, widget: markdown}
       - name: "cas-frequents"
         label: "Cas d'usage frequents"
         file: "docs/flux-utilisation/cas-frequents.md"
         fields:
-          - name: body
-            label: Contenu
-            widget: markdown 
+          - {label: Contenu, name: body, widget: markdown} 
