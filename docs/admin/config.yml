@@ -5,6 +5,20 @@ backend:
   auth_type: pkce
   app_id: Ov23liEx2R89sDc9vYex
 
+# Dossier media requis pour la validation, meme si on ne l'utilise pas dans ce test.
+media_folder: "docs/assets/images"
+
+# Une seule collection de test avec un seul fichier pour isoler le probleme.
+collections:
+  - name: "test"
+    label: "Page de Test"
+    files:
+      - name: "accueil"
+        label: "Page d'accueil"
+        file: "docs/index.md"
+        fields:
+          - { name: "body", label: "Contenu", widget: "markdown" }
+
 # Collection de test minimale pour valider que le fichier est bien lu.
 # Aucun accent n'est utilisé ici.
 collections:
