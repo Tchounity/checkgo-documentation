@@ -5,8 +5,9 @@
   <title>Content Manager</title>
 </head>
 <body>
+  <div id="root"></div>
   <script>
-    window.CMS_CONFIG = {
+    const config = {
       backend: {
         name: "github",
         repo: "Tchounity/checkgo-documentation",
@@ -17,6 +18,7 @@
       media_folder: "docs/assets/images",
       public_folder: "/assets/images",
       collections: [
+        // ... Vos collections viendront ici ...
         {
           name: "test_posts",
           label: "Posts de Test",
@@ -29,7 +31,11 @@
         },
       ],
     };
+
+    window.CMS_CONFIG = config;
   </script>
+  
+  <!-- Decap CMS Core -->
   <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
 </body>
 </html> 
