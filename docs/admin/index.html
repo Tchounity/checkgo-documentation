@@ -4,9 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gestion de contenu</title>
+</head>
+<body>
+  <!-- Scripts à la fin du body pour garantir que le DOM est chargé -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    window.CMS_CONFIG = {
+    const config = {
       backend: {
         name: "github",
         repo: "Tchounity/checkgo-documentation",
@@ -62,9 +65,7 @@
       ],
     };
 
-    CMS.init({ config: window.CMS_CONFIG });
+    CMS.init({ config });
   </script>
-</head>
-<body>
 </body>
 </html> 
