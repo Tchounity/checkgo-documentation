@@ -1,0 +1,20 @@
+# Configuration de test minimale pour l'authentification directe
+
+backend:
+  name: github
+  repo: Tchounity/checkgo-documentation
+  branch: main
+  auth_type: pkce
+  app_id: Ov23liEx2R89sDc9vYex
+
+media_folder: "docs/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "test_posts"
+    label: "Posts de Test"
+    folder: "_tests"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"} 
