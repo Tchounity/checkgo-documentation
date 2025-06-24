@@ -2,40 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    const config = {
-      backend: {
-        name: "github",
-        repo: "Tchounity/checkgo-documentation",
-        branch: "main",
-        auth_type: "pkce",
-        app_id: "Ov23liEx2R89sDc9vYex",
-      },
-      media_folder: "docs/assets/images",
-      public_folder: "/assets/images",
-      collections: [
-        // ... Vos collections viendront ici ...
-        {
-          name: "test_posts",
-          label: "Posts de Test",
-          folder: "_tests",
-          create: true,
-          fields: [
-            { label: "Title", name: "title", widget: "string" },
-            { label: "Body", name: "body", widget: "markdown" },
-          ],
-        },
-      ],
-    };
-
-    window.CMS_CONFIG = config;
-  </script>
-  
-  <!-- Decap CMS Core -->
   <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
 </body>
 </html> 
