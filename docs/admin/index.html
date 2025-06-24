@@ -4,78 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gestion de contenu</title>
-  
-  <!-- Etape 1: Dire au CMS d'attendre -->
-  <script> window.CMS_MANUAL_INIT = true; </script>
 </head>
 <body>
-  <!-- Les scripts avec 'defer' s'executent dans l'ordre apres le chargement de la page -->
-  <script src="https://unpkg.com/decap-cms@4/dist/decap-cms.js"></script>
-  
-  <script>
-    const config = {
-      backend: {
-        name: "github",
-        repo: "Tchounity/checkgo-documentation",
-        branch: "main",
-        auth_type: "pkce",
-        app_id: "Ov23liEx2R89sDc9vYex",
-      },
-      media_folder: "docs/assets/images",
-      public_folder: "/assets/images",
-      collections: [
-        {
-          name: "pages_principales",
-          label: "Pages du site",
-          files: [
-            { name: "index", label: "Page d'accueil", file: "docs/index.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "lexique", label: "Lexique", file: "docs/lexique.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-          ],
-        },
-        {
-          name: "configuration",
-          label: "I. Configuration initiale",
-          files: [
-            { name: "connexion-vue-ensemble", label: "Connexion et vue d'ensemble", file: "docs/configuration/connexion-vue-ensemble.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "utilisateurs", label: "Gestion des utilisateurs", file: "docs/configuration/utilisateurs.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "modeles-vehicules", label: "Modeles de vehicules", file: "docs/configuration/modeles-vehicules.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "groupes-vehicules", label: "Groupes de vehicules", file: "docs/configuration/groupes-vehicules.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "modeles-controles", label: "Modeles de controles", file: "docs/configuration/modeles-controles.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "ajout-vehicules", label: "Ajout de vehicules", file: "docs/configuration/ajout-vehicules.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "parametres-techniques", label: "Parametres techniques", file: "docs/configuration/parametres-techniques.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-          ],
-        },
-        {
-          name: "flux",
-          label: "II. Flux d'utilisation",
-          files: [
-            { name: "creation-contrat", label: "Creation d'un contrat", file: "docs/flux-utilisation/creation-contrat.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "etat-lieux-depart", label: "Etat des lieux de depart", file: "docs/flux-utilisation/etat-lieux-depart.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "etat-lieux-retour", label: "Etat des lieux de retour", file: "docs/flux-utilisation/etat-lieux-retour.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "suivi-rapports", label: "Suivi et rapports", file: "docs/flux-utilisation/suivi-rapports.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-            { name: "cas-frequents", label: "Cas d'usage frequents", file: "docs/flux-utilisation/cas-frequents.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
-          ],
-        },
-      ],
-    };
-
-    const maxWaitTime = 5000; // 5 secondes
-    const checkInterval = 50;  // 50 millisecondes
-    let timeWaited = 0;
-
-    const initInterval = setInterval(() => {
-      if (window.CMS) {
-        console.log(`%c[DEBUG] L'objet CMS a ete trouve apres ${timeWaited}ms. Initialisation...`, 'color: green; font-weight: bold;');
-        clearInterval(initInterval);
-        CMS.init(config);
-      } else {
-        timeWaited += checkInterval;
-        if (timeWaited >= maxWaitTime) {
-          clearInterval(initInterval);
-          console.error("%c[ERREUR] L'objet CMS n'a pas ete trouve apres 5 secondes. Le script de Decap CMS ne fonctionne pas comme prevu.", 'color: red; font-weight: bold;');
-        }
-      }
-    }, checkInterval);
-  </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html> 
