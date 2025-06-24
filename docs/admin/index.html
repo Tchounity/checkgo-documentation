@@ -6,10 +6,10 @@
   <title>Gestion de contenu</title>
 </head>
 <body>
-  <!-- Scripts à la fin du body pour garantir que le DOM est chargé -->
+  <!-- Scripts placés à la fin du body pour garantir que la page est prête -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    const config = {
+    window.CMS_CONFIG = {
       backend: {
         name: "github",
         repo: "Tchounity/checkgo-documentation",
@@ -65,7 +65,7 @@
       ],
     };
 
-    CMS.init({ config });
+    CMS.init();
   </script>
 </body>
 </html> 
