@@ -6,6 +6,61 @@
   <title>Gestion de contenu</title>
 </head>
 <body>
+  <!-- 1. Dire au CMS d'attendre pour une initialisation manuelle -->
+  <script> window.CMS_MANUAL_INIT = true; </script>
+
+  <!-- 2. Charger le script principal du CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- 3. Définir la configuration et démarrer le CMS -->
+  <script>
+    const config = {
+      backend: {
+        name: "github",
+        repo: "Tchounity/checkgo-documentation",
+        branch: "main",
+        auth_type: "pkce",
+        app_id: "Ov23liEx2R89sDc9vYex",
+      },
+      media_folder: "docs/assets/images",
+      public_folder: "/assets/images",
+      collections: [
+        {
+          name: "pages_principales",
+          label: "Pages du site",
+          files: [
+            { file: "docs/index.md", label: "Page d'accueil", name: "index", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { file: "docs/lexique.md", label: "Lexique", name: "lexique", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+          ],
+        },
+        {
+          name: "configuration",
+          label: "I. Configuration initiale",
+          files: [
+            { label: "Connexion et vue d'ensemble", name: "connexion-vue-ensemble", file: "docs/configuration/connexion-vue-ensemble.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Gestion des utilisateurs", name: "utilisateurs", file: "docs/configuration/utilisateurs.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Modèles de véhicules", name: "modeles-vehicules", file: "docs/configuration/modeles-vehicules.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Groupes de véhicules", name: "groupes-vehicules", file: "docs/configuration/groupes-vehicules.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Modèles de contrôles", name: "modeles-controles", file: "docs/configuration/modeles-controles.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Ajout de véhicules", name: "ajout-vehicules", file: "docs/configuration/ajout-vehicules.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Paramètres techniques", name: "parametres-techniques", file: "docs/configuration/parametres-techniques.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+          ],
+        },
+        {
+          name: "flux",
+          label: "II. Flux d'utilisation",
+          files: [
+            { label: "Création d'un contrat", name: "creation-contrat", file: "docs/flux-utilisation/creation-contrat.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "État des lieux de départ", name: "etat-lieux-depart", file: "docs/flux-utilisation/etat-lieux-depart.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "État des lieux de retour", name: "etat-lieux-retour", file: "docs/flux-utilisation/etat-lieux-retour.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Suivi et rapports", name: "suivi-rapports", file: "docs/flux-utilisation/suivi-rapports.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+            { label: "Cas d'usage fréquents", name: "cas-frequents", file: "docs/flux-utilisation/cas-frequents.md", fields: [{ label: "Contenu", name: "body", widget: "markdown" }] },
+          ],
+        },
+      ],
+    };
+
+    CMS.init(config);
+  </script>
 </body>
 </html> 
