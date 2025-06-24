@@ -5,22 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Content Manager</title>
-  <!-- Link to the configuration file -->
+  <script src="https://unpkg.com/whatwg-fetch@^3.0.0/dist/fetch.umd.js"></script>
   <link href="config.yml" type="text/yaml" rel="cms-config-url">
   <!-- Include the configuration object -->
   <link rel="stylesheet" href="https://unpkg.com/decap-cms@^3.0.0/dist/main.css" />
 </head>
 <body>
   <!-- Include the script that builds the page and powers Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-  <!-- ==== SCRIPT DE DIAGNOSTIC DE COMMUNICATION ==== -->
-  <script>
-    window.addEventListener('message', function(event) {
-      console.log('%cMESSAGE REÇU :', 'color: blue; font-weight: bold;', 'La page principale a reçu un message.');
-      console.log('Origine du message :', event.origin);
-      console.log('Données reçues :', event.data);
-    });
-  </script>
+  <script src="https://unpkg.com/decap-cms@3.1.9/dist/decap-cms.js"></script>
 </body>
 </html> 
