@@ -8,19 +8,5 @@
 <body>
   <!-- Include the script that builds the page and powers Decap CMS -->
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@latest/dist/decap-cms.js"></script>
-
-  <!-- ==== SCRIPT DE DIAGNOSTIC ==== -->
-  <script>
-    window.addEventListener('load', function() {
-      console.log('DIAGNOSTIC: La page est entièrement chargée.');
-      if (window.decapCMS) {
-        console.log('DIAGNOSTIC: SUCCÈS. L objet decapCMS est bien présent.');
-        console.log(window.decapCMS);
-      } else {
-        console.error('DIAGNOSTIC: ÉCHEC. L objet decapCMS est introuvable après le chargement.');
-      }
-    });
-  </script>
-  <!-- ==== FIN DU SCRIPT DE DIAGNOSTIC ==== -->
 </body>
 </html> 
