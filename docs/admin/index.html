@@ -6,6 +6,19 @@
   <title>Gestion de contenu</title>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <!-- Mise à jour vers la dernière version majeure pour écarter les bugs -->
+  <script src="https://unpkg.com/decap-cms@4/dist/decap-cms.js"></script>
+
+  <!-- Script de débogage pour inspecter la configuration chargée par le CMS -->
+  <script>
+    window.addEventListener('decap-cms-post-load', function() {
+      console.log('%c[DEBUG] Decap CMS a chargé sa configuration. Voici la configuration qu\'il utilise :', 'color: green; font-weight: bold;');
+      const config = CMS.readConfig();
+      console.log(config);
+      
+      console.log('%c[DEBUG] Inspection de la configuration du backend :', 'color: blue; font-weight: bold;');
+      console.log(config.backend);
+    });
+  </script>
 </body>
 </html> 

@@ -5,6 +5,18 @@ backend:
   auth_type: pkce
   app_id: Ov23liEx2R89sDc9vYex
 
+# Collection de test minimale pour valider que le fichier est bien lu.
+# Aucun accent n'est utilisé ici.
+collections:
+  - name: "test_collection"
+    label: "Section de Test"
+    files:
+      - label: "Page d'accueil"
+        name: "accueil"
+        file: "docs/index.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
 media_folder: "docs/assets/images"
 public_folder: "/assets/images"
 
