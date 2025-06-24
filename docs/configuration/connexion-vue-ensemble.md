@@ -8,9 +8,9 @@ Pour accéder au portail :
 
 ![Liste des contrôles dans l'interface](../assets/images/email-password.png)
 
----
+<!-- ---
 
 Une fois connecté, vous arriverez par défaut sur la page listant les [États des lieux](../lexique.md#etat-des-lieux).
 
 
-![Liste des contrôles dans l'interface](../assets/images/control-list.png)
+![Liste des contrôles dans l'interface](../assets/images/control-list.png) -->

@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: Tchounity/checkgo-documentation
+  branch: main
+
+media_folder: "docs/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "configuration"
+    label: "I. Configuration initiale"
+    folder: "docs/configuration"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "flux"
+    label: "II. Flux d'utilisation"
+    folder: "docs/flux-utilisation"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "pages_principales"
+    label: "Pages principales et Lexique"
+    files:
+      - file: "docs/index.md"
+        label: "Accueil"
+        name: "index"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      - file: "docs/lexique.md"
+        label: "Lexique"
+        name: "lexique"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"} 
