@@ -15,12 +15,16 @@ collections:
         label: "Page d'accueil"
         file: "docs/index.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "lexique"
         label: "Lexique"
         file: "docs/lexique.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
 
   - name: "configuration"
     label: "I. Configuration initiale"
@@ -29,37 +33,51 @@ collections:
         label: "Connexion et vue d'ensemble"
         file: "docs/configuration/connexion-vue-ensemble.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "utilisateurs"
         label: "Gestion des utilisateurs"
         file: "docs/configuration/utilisateurs.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "modeles-vehicules"
         label: "Modeles de vehicules"
         file: "docs/configuration/modeles-vehicules.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "groupes-vehicules"
         label: "Groupes de vehicules"
         file: "docs/configuration/groupes-vehicules.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "modeles-controles"
         label: "Modeles de controles"
         file: "docs/configuration/modeles-controles.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "ajout-vehicules"
         label: "Ajout de vehicules"
         file: "docs/configuration/ajout-vehicules.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "parametres-techniques"
         label: "Parametres techniques"
         file: "docs/configuration/parametres-techniques.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
 
   - name: "flux"
     label: "II. Flux d'utilisation"
@@ -68,24 +86,34 @@ collections:
         label: "Creation d'un contrat"
         file: "docs/flux-utilisation/creation-contrat.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "etat-lieux-depart"
         label: "Etat des lieux de depart"
         file: "docs/flux-utilisation/etat-lieux-depart.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "etat-lieux-retour"
         label: "Etat des lieux de retour"
         file: "docs/flux-utilisation/etat-lieux-retour.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "suivi-rapports"
         label: "Suivi et rapports"
         file: "docs/flux-utilisation/suivi-rapports.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - name: body
+            label: Contenu
+            widget: markdown
       - name: "cas-frequents"
         label: "Cas d'usage frequents"
         file: "docs/flux-utilisation/cas-frequents.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"} 
+          - name: body
+            label: Contenu
+            widget: markdown 
