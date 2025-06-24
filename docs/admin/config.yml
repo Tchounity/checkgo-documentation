@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Tchounity/checkgo-documentation
   branch: main
+  site_id: checkgo-documentation
   
 media_folder: "docs/assets/images"
 public_folder: "/assets/images"
