@@ -6,10 +6,19 @@
   <title>Gestion de contenu</title>
 </head>
 <body>
-  <!-- Scripts placés à la fin du body pour garantir que la page est prête -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <!-- 1. Dire au CMS d'attendre pour une initialisation manuelle -->
   <script>
-    window.CMS_CONFIG = {
+    console.log("[DEBUG] Setting CMS_MANUAL_INIT to true.");
+    window.CMS_MANUAL_INIT = true;
+  </script>
+
+  <!-- 2. Charger le script principal du CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- 3. Définir la configuration et démarrer le CMS -->
+  <script>
+    console.log("[DEBUG] Preparing config object.");
+    const config = {
       backend: {
         name: "github",
         repo: "Tchounity/checkgo-documentation",
@@ -65,7 +74,10 @@
       ],
     };
 
-    CMS.init();
+    console.log("[DEBUG] Config object created:", config);
+    console.log("[DEBUG] Calling CMS.init()...");
+    CMS.init({ config });
+    console.log("[DEBUG] CMS.init() called.");
   </script>
 </body>
 </html> 
