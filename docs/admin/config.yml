@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Tchounity/checkgo-documentation
   branch: main
-  site_id: tiny-dolphin-d88b7f
+  site_domain: tiny-dolphin-d88b7f.netlify.app
   
 media_folder: "docs/assets/images"
 public_folder: "/assets/images"
